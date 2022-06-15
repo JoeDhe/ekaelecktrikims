@@ -1,3 +1,4 @@
+//https://github.com/GoogleChrome/samples/blob/gh-pages/service-worker/custom-offline-page/service-worker.js
 const OFFLINE_VERSION = 1;
 const CACHE_NAME = 'offline';
 const OFFLINE_URL = 'offline.html';
