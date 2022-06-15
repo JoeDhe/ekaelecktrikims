@@ -1,4 +1,4 @@
-const OFFLINE_VERSION = 1;
+const OFFLINE_VERSION = 2;
 const CACHE_NAME = 'offline';
 const OFFLINE_URL = [
   './',
@@ -9,7 +9,7 @@ const OFFLINE_URL = [
 self.addEventListener('install', (event) => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_NAME);
-    await cache.addAll(new Request(OFFLINE_URL, {cache: 'reload'}));
+    await cache.add(new Request(OFFLINE_URL, {cache: 'reload'}));
   })());
 });
 
