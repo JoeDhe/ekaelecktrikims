@@ -2,10 +2,10 @@
   "name": "Inventory Management System",
   "short_name": "IMS-Apps",
   "icons": [{
-    "src": "images/logo1.png"
+    "src": "images/logo1.png",
     "sizes": "96x96"
   }, {
-    "src": "images/logo2.png"
+    "src": "images/logo2.png",
     "sizes": "192x192"
   }],
   "theme_color": "#a4a4ff",
