@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IMS - APPS</title>
+  </head>
+  
+  <body>
+    <iframe src="https://script.google.com/macros/s/AKfycbxgXHUqUpQp67lMkJ8oicdrF6hJpPT49HrY5a1yJ2yN-TZ-IrYjw_BsfVSWw-_ZY5Y/exec" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0%;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js');
+}
+
+window.addEventListener('message', receiveMessage, false);     
+function receiveMessage(e){
+    if(e.data=="restartApp"){
+        location.reload();
+    }
+}
+</script>
+</body>
+</html>
